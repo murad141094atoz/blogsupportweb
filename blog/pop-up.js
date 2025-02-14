@@ -1,4 +1,4 @@
-   var puURL = 'https://blogsupportweb.com/code/pop-ads.html'; // URL for the pop-up
+   var puURL = 'https://blogsupportweb.com/post/code/pop-ads.html'; // URL for the pop-up
     var puTS = Math.round(+new Date() / 1000); // Current timestamp in seconds
     console.log('Current timestamp:', puTS);
 
