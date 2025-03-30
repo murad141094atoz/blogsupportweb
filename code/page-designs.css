@@ -235,6 +235,7 @@
 }
 
 .sticky-ads .sticky-ads-content {
+    background: #fff;
     overflow: hidden;
     display: block;
     position: relative;
