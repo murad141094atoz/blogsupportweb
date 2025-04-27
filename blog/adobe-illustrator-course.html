@@ -317,7 +317,31 @@ window.alert = function () {
 </script>
 
     
+<script>
+        document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (
+            (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) || 
+            e.key === 'F12'
+        ) {
+            e.preventDefault();
+        }
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && e.key === 'u') {
+            e.preventDefault();
+        }
+    });
+    setInterval(function () {
+        const devtools = /./;
+        devtools.toString = function () { return 'Detected'; };
+        console.log('%c', devtools);
+    }, 1000);
+    </script>
 
+    
 <!-- Floating Ad Banner -->
  <div class="floating-ads">
 <div class="sticky-ads" id="sticky-ads">
